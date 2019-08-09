@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import BooksEdit from './views/BooksEdit.vue'
 
 Vue.use(Router)
 
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/books/:id/edit',
+      name: 'books-edit',
+      component: BooksEdit
     },
     {
       path: '/about',
